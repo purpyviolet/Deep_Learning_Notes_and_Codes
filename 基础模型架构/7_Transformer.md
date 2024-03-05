@@ -104,7 +104,7 @@ q，k，v分别由Embedding X乘$W^G$和$W^K$和$W^V$得到
 
 ![image-20240301092307293](7_Transformer.assets/image-20240301092307293.png)
 
-Decoder前面的Masked Multi-Head Attention是为了保证训练过程中注意力头不会看到未来的信息，即要预测的词的后面的信息，只能看到其之前的信息。第二层多头注意力机制的输入来自编码器的K,V，最后输出K的概率向量，并实现预测。
+Decoder前面的Masked Multi-Head Attention是为了保证训练过程中注意力头不会看到未来的信息，即要预测的词的后面的信息，只能看到其之前的信息。第二层多头注意力机制的输入来自编码器的K,V，最后输出Q的概率向量，并实现预测。
 
 ![image-20240301092600825](7_Transformer.assets/image-20240301092600825.png)
 
